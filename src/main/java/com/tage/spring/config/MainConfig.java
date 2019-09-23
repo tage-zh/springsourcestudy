@@ -25,6 +25,10 @@ import org.springframework.stereotype.Controller;
 //    @Filter(type = FilterType.ANNOTATION, value = Controller.class)
 //})
 public class MainConfig {
+  @Bean
+  public TageFactoryBean tageFactoryBean(){
+    return new TageFactoryBean();
+  }
 
   @Bean
 //  @Lazy

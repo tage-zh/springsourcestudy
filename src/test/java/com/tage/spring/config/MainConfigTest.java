@@ -1,5 +1,6 @@
 package com.tage.spring.config;
 
+import com.tage.spring.beans.Monkey;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -20,6 +21,8 @@ public class MainConfigTest {
   public void testPerson() throws Exception {
     ApplicationContext app = new AnnotationConfigApplicationContext(MainConfig.class);
     System.out.println("init context complete");
+    Monkey monkey = (Monkey)app.getBean("tageFactoryBean");
+    monkey.say();
     for (String beanDefinitionName : app.getBeanDefinitionNames()) {
       System.out.println(beanDefinitionName);
     }
