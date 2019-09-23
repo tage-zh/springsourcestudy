@@ -23,8 +23,8 @@ public class MainConfigTest {
     for (String beanDefinitionName : app.getBeanDefinitionNames()) {
       System.out.println(beanDefinitionName);
     }
-    app.getBean("person");
-    app.getBean("person");
+//    app.getBean("com.tage.spring.beans.Bird");
+//    app.getBean("person");
   }
 
 

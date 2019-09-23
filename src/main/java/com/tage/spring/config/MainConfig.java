@@ -1,5 +1,7 @@
 package com.tage.spring.config;
 
+import com.tage.spring.beans.Bird;
+import com.tage.spring.beans.Cat;
 import com.tage.spring.beans.Person;
 import com.tage.spring.condition.LinuxCondition;
 import com.tage.spring.condition.WindowsCondition;
@@ -9,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -17,6 +20,7 @@ import org.springframework.stereotype.Controller;
  * Brief info of the class MainConfig.
  **/
 @Configuration
+@Import({TageImportSelector.class,TageImportBeandefination.class})
 //@ComponentScan(basePackages = {"com.tage.spring"}, useDefaultFilters = false, excludeFilters = {
 //    @Filter(type = FilterType.ANNOTATION, value = Controller.class)
 //})
