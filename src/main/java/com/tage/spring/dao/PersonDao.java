@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 /**
  * Brief info of the class PersonDao.
  **/
-@Repository
+//@Repository
 public class PersonDao {
 
 }

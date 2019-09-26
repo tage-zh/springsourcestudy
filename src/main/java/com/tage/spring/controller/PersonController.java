@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 /**
  * Brief info of the class PersonController.
  **/
-@Controller
+//@Controller
 public class PersonController {
 
 }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 /**
  * Brief info of the class PersonService.
  **/
-@Service
+//@Service
 public class PersonService {
 
 }

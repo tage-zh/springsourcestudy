@@ -21,8 +21,12 @@ public class MainConfigTest {
   public void testPerson() throws Exception {
     ApplicationContext app = new AnnotationConfigApplicationContext(MainConfig.class);
     System.out.println("init context complete");
+    TageFactoryBean tageFactoryBean = (TageFactoryBean)app.getBean("&tageFactoryBean");
+    Monkey monkey1 = tageFactoryBean.getObject();
     Monkey monkey = (Monkey)app.getBean("tageFactoryBean");
+    Monkey monkey2 = (Monkey)app.getBean("tageFactoryBean");
     monkey.say();
+    System.out.println(monkey==monkey2);
     for (String beanDefinitionName : app.getBeanDefinitionNames()) {
       System.out.println(beanDefinitionName);
     }
