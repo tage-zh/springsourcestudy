@@ -1,8 +1,16 @@
 package com.tage.spring.beans;
 
+import lombok.Data;
+import org.springframework.beans.factory.annotation.Value;
+
 /**
  * Brief info of the class Bird.
  **/
-public class Bird {
 
+@Data
+public class Bird {
+  @Value("${bird.name}")
+  private String name;
+  @Value("1")
+  private Integer age;
 }
