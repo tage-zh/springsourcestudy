@@ -3,6 +3,7 @@ package com.tage.spring.ioc.config;
 import com.tage.spring.ioc.controller.PersonController;
 import com.tage.spring.ioc.dao.PersonDao;
 import com.tage.spring.ioc.service.PersonService;
+import org.springframework.beans.factory.Aware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -13,7 +14,7 @@ import org.springframework.context.annotation.Primary;
  **/
 @Configuration
 @Import({PersonController.class, PersonService.class, PersonDao.class})
-public class IOCConifg {
+public class IOCConifg  {
 
   @Bean
   @Primary
