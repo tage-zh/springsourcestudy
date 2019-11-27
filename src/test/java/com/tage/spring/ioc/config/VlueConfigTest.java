@@ -17,12 +17,13 @@ public class VlueConfigTest {
    */
   @Test
   public void testBird() throws Exception {
-    AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(VlueConfig.class);
-    for (String beanDefinitionName : app.getBeanDefinitionNames()) {
-      System.out.println(beanDefinitionName);
-    }
-    Bird bird = (Bird) app.getBean("bird");
-    System.out.println(bird);
+    AnnotationConfigApplicationContext  app= new AnnotationConfigApplicationContext(VlueConfig.class);
+//    for (String beanDefinitionName : app.getBeanDefinitionNames()) {
+//      System.out.println(beanDefinitionName);
+//    }
+//    Bird bird = (Bird) app.getBean("bird");
+//    System.out.println(bird);
+    System.out.println(app.getClass().getClassLoader().getResource("").getPath());
   }
 
 

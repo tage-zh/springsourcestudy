@@ -12,7 +12,7 @@ import org.springframework.util.StringValueResolver;
 /**
  * Brief info of the class Light.
  **/
-@Component
+//@Component
 public class Light implements ApplicationContextAware, BeanNameAware, EmbeddedValueResolverAware {
 
   public void setBeanName(String name) {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:myname="http://www.sap.com/schema/user"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop.xsd
+  http://www.sap.com/schema/user http://www.sap.com/schema/user.xsd">
+
+  <myname:test id="testBean" userName="hahha" email="bbb"/>
+  <bean id="person" class="com.tage.spring.ioc.beans.Person"></bean>
+  <bean id="myEvent" class="com.tage.spring.ioc.event.MyApplicationEvent">
+    <constructor-arg index="0">
+      <value>testing</value>
+    </constructor-arg>
+  </bean>
+  <bean id="myListener" class="com.tage.spring.ioc.listen.MyApplicationListener"></bean>
+  <bean class="com.tage.spring.aop.aopimpl.ApplicationListenerAspect"></bean>
+  <aop:aspectj-autoproxy/>
+</beans>

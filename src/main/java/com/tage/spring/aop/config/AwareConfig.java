@@ -16,7 +16,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy
 public class AwareConfig {
 
-  @Bean
+  @Bean({"count1","count2"})
   public Count count(){
     return new Count();
   }

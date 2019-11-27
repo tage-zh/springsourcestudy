@@ -29,7 +29,7 @@ public class MainConfig {
     System.out.println("init person");
     Person person = new Person();
     person.setAge(22);
-    person.setName("tage");
+//    person.setName("tage");
     return person;
   }
 
@@ -39,7 +39,7 @@ public class MainConfig {
     System.out.println("init personWindows");
     Person person = new Person();
     person.setAge(22);
-    person.setName("tage");
+//    person.setName("tage");
     return person;
   }
 
@@ -49,7 +49,7 @@ public class MainConfig {
     System.out.println("init personLinux");
     Person person = new Person();
     person.setAge(22);
-    person.setName("tage");
+//    person.setName("tage");
     return person;
   }
 
