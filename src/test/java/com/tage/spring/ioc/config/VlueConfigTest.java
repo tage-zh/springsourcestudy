@@ -23,7 +23,7 @@ public class VlueConfigTest {
 //    }
 //    Bird bird = (Bird) app.getBean("bird");
 //    System.out.println(bird);
-    System.out.println(app.getClass().getClassLoader().getResource("").getPath());
+//    System.out.println(app.getClass().getClassLoader().getResource("").getPath());
   }
 
 
